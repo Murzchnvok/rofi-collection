@@ -1,0 +1,67 @@
+configuration {
+  display-run: " ";
+  display-drun: "  ";
+  display-window: "  ";
+  drun-display-format: "{icon} {name}";
+  font: "JetBrainsMono Nerd Font Medium 10";
+  modi: "window,run,drun";
+  show-icons: true;
+}
+
+* {
+  fgcolor2: #787878;
+  fgcolor3: #393939;
+  bg: #181818;
+  bg-alt: #181818;
+  fg: #393939;
+  fg-alt: #ebebeb;
+  background-color: @bg;
+  
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+element {
+  padding: 12;
+  orientation: vertical;
+  text-color: @fg;
+}
+
+element selected {
+  text-color: @fg-alt;
+}
+
+entry {
+  background-color: @bg-alt;
+  padding: 12;
+  text-color: @fg-alt;
+}
+
+inputbar {
+  children: [entry];
+}
+
+listview {
+  background-color: @bg;
+  columns: 1;
+  lines: 8;
+}
+
+mainbox {
+  background-color: @bg;
+  children: [inputbar, listview];
+}
+
+prompt {
+  background-color: @fg;
+  enabled: true;
+  font: "FontAwesome 12";
+  padding: 12 0 0 12;
+  text-color: @white;
+}
+
+window {
+  transparency: "real";
+}
