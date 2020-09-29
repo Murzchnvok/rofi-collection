@@ -32,10 +32,9 @@ First you need to download or clone the repo:
 git clone https://github.com/Murzchnvok/rofi-collection
 ```
 
-Also you'll need to download and install these fonts from [nerd fonts](https://www.nerdfonts.com/font-downloads):
+Also you'll need to download and install this font from [nerd fonts](https://www.nerdfonts.com/font-downloads):
 
 * JetBrainsMono
-* Sauce Code Pro
 
 If you're using sxhkd you need to add something like this to your sxhkdrc:
 
@@ -60,9 +59,17 @@ The first option will be easier to keep updated!
 
 *Quality is more important then quantity!*
 
+## Dracula
+
+![rofi](screenshots/dracula/rofi.png)
+
 ## Material
 
 ![rofi](screenshots/material/rofi.png)
+
+## Neon
+
+![rofi](screenshots/neon/rofi.png)
 
 ## Nord
 
