@@ -9,12 +9,10 @@ configuration {
 }
 
 * {
-  fgcolor2: #787878;
-  fgcolor3: #393939;
   bg: #181818;
-  bg-alt: #181818;
-  fg: #393939;
-  fg-alt: #ebebeb;
+  bg-alt: #212121;
+  fg: #FFFFFF;
+  fg-alt: #393939;
   background-color: @bg;
   
   border: 0;
@@ -26,17 +24,17 @@ configuration {
 element {
   padding: 12;
   orientation: vertical;
-  text-color: @fg;
+  text-color: @fg-alt;
 }
 
 element selected {
-  text-color: @fg-alt;
+  text-color: @fg;
 }
 
 entry {
   background-color: @bg-alt;
   padding: 12;
-  text-color: @fg-alt;
+  text-color: @fg;
 }
 
 inputbar {
@@ -55,11 +53,11 @@ mainbox {
 }
 
 prompt {
-  background-color: @fg;
+  background-color: @bg-alt;
   enabled: true;
   font: "FontAwesome 12";
   padding: 12 0 0 12;
-  text-color: @white;
+  text-color: @fg;
 }
 
 window {

@@ -2,56 +2,79 @@
 
 My personal collection.
 
-## Getting Started
+*If you find any error or you think I need to add something to this readme please send a message to me on [reddit](https://www.reddit.com/user/murzchnvok)*
 
-Things you need to install first.
+## Getting Started
 
 ### Prerequisites
 
 You need to install Rofi and an icon pack, the one I'm using is [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme):
 
-Debian
+Debian/Ubuntu
 
 ```bash
-sudo apt install rofi papirus-icon-theme
+$HOME
+-> sudo apt install rofi papirus-icon-theme
 ```
 
 Fedora
 
 ```bash
-sudo dnf install rofi papirus-icon-theme
+$HOME
+-> sudo dnf install rofi papirus-icon-theme
 ```
 
-If you're having trouble I highly recommend you to take a look at [rofi repo](https://github.com/davatorium/rofi):
+If you're having trouble:
+
+[rofi repo](https://github.com/davatorium/rofi).
+
+[Papirus Icon repo](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme#installation)
+
+Also you need to download and install this font from [nerd fonts](https://www.nerdfonts.com/font-downloads):
+
+* JetBrainsMono
+
+To install this font, copy/move to the folder *~/.fonts* and run in the terminal:
+
+```bash
+$HOME
+-> fc-cache -fv
+```
 
 ### Installing
 
-First you need to download or clone the repo:
+First you need to clone the repo (recommend in $HOME, or Projects directory):
 
 ```bash
-git clone https://github.com/Murzchnvok/rofi-collection
+$HOME
+-> git clone https://github.com/Murzchnvok/rofi-collection
 ```
-
-Also you'll need to download and install this font from [nerd fonts](https://www.nerdfonts.com/font-downloads):
-
-* JetBrainsMono
 
 If you're using sxhkd you need to add something like this to your sxhkdrc:
 
 ```bash
 super + shift + {i,o,p}
-    rofi -show {run,drun,window} -theme ~/rofi-collection/nord/nord.rasi
+    rofi -show {run,drun,window} -theme $HOME/rofi-collection/nord/nord.rasi
 ```
 
-or just copy or move the rasi config file to *~/.local/share/rofi/themes* and run this in the terminal to select a theme:
+or copy/move the rasi config file to *~/.local/share/rofi/themes/* and run rofi theme selector:
 
 ```bash
-rofi-theme-selector
+$HOME/rofi-collection
+-> cp -r nord $HOME/.local/share/rofi/themes/
+
+$HOME
+-> rofi-theme-selector
 ```
 
-The first option will be easier to keep updated!
+Remember to keep updated:
 
-## Something you might be interested
+```bash
+$HOME
+-> cd $HOME/rofi-collection && git pull
+```
+
+## You might be interested
 
 * [Polybar Collection](https://github.com/Murzchnvok/polybar-collection)
 * [Wallpaper Collection](https://drive.google.com/drive/folders/1o1qjRgkJtnF_8uGB1z6MRsQUjWinHUsw?usp=sharing)
