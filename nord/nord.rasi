@@ -41,6 +41,14 @@ element {
   padding: 12;
   orientation: vertical;
   text-color: @frost-3;
+  children: [element-icon, element-text];
+}
+
+element-text {
+}
+
+element-icon {
+  size: 1.2em;
 }
 
 element selected {
