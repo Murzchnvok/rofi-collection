@@ -2,7 +2,7 @@
 
 My personal collection.
 
-*If you find any error or you think I need to add something to this readme please send a message to me on [reddit](https://www.reddit.com/user/murzchnvok)*
+_If you find any error or you think I need to add something to this readme please send a message to me on [reddit](https://www.reddit.com/user/murzchnvok)_
 
 ## Getting Started
 
@@ -32,9 +32,9 @@ If you're having trouble:
 
 Also you need to download and install this font from [nerd fonts](https://www.nerdfonts.com/font-downloads):
 
-* JetBrainsMono
+- JetBrainsMono
 
-To install this font, copy/move to the folder *~/.fonts* and run in the terminal:
+To install this font, copy/move to the folder _~/.fonts_ and run in the terminal:
 
 ```bash
 $HOME
@@ -43,7 +43,7 @@ $HOME
 
 ### Installing
 
-First you need to clone the repo (recommend in $HOME, or Projects directory):
+First you need to clone the repo (recommend in \$HOME, or Projects directory):
 
 ```bash
 $HOME
@@ -57,7 +57,7 @@ super + shift + {i,o,p}
     rofi -show {run,drun,window} -theme $HOME/rofi-collection/nord/nord.rasi
 ```
 
-or copy/move the rasi config file to *~/.local/share/rofi/themes/* and run rofi theme selector:
+or copy/move the rasi config file to _~/.local/share/rofi/themes/_ and run rofi theme selector:
 
 ```bash
 $HOME/rofi-collection
@@ -76,11 +76,11 @@ $HOME
 
 ## You might be interested
 
-* [Polybar Collection](https://github.com/Murzchnvok/polybar-collection)
-* [Wallpaper Collection](https://drive.google.com/drive/folders/1o1qjRgkJtnF_8uGB1z6MRsQUjWinHUsw?usp=sharing)
-* [Official rofi-themes repo](https://github.com/davatorium/rofi-themes)
+- [Polybar Collection](https://github.com/Murzchnvok/polybar-collection)
+- [Wallpaper Collection](https://drive.google.com/drive/folders/1o1qjRgkJtnF_8uGB1z6MRsQUjWinHUsw?usp=sharing)
+- [Official rofi-themes repo](https://github.com/davatorium/rofi-themes)
 
-*Quality is more important then quantity!*
+_Quality is more important then quantity!_
 
 ## Dracula
 
@@ -89,6 +89,10 @@ $HOME
 ## Material
 
 ![rofi](screenshots/material/rofi.png)
+
+## Minimal
+
+![rofi](screenshots/minimal/rofi.png)
 
 ## Neon
 
