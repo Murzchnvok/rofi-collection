@@ -94,10 +94,6 @@ _Quality is more important then quantity!_
 
 ![rofi](screenshots/minimal/rofi.png)
 
-## Neon
-
-![rofi](screenshots/neon/rofi.png)
-
 ## Nord
 
 ![rofi](screenshots/nord/rofi.png)
