@@ -9,13 +9,12 @@ configuration {
 }
 
 * {
-  bg: #282a36;
-  bg-alt: #44475a;
-  
-  fg: #f8f8f2;
+  bg: #282828;
+  bg-alt: #3c3836;
 
-  blue: #6272a4;
-  purple: #bd93f9;
+  fg: #fbf1c7;
+
+  blue: #83a598;
 
   background-color: @bg;
   
@@ -28,15 +27,15 @@ configuration {
 element {
   padding: 12;
   orientation: vertical;
-  text-color: @blue;
+  text-color: @fg;
 }
 
 element selected {
-  text-color: @purple;
+  text-color: @blue;
 }
 
 entry {
-  background-color: @blue;
+  background-color: @bg-alt;
   padding: 12 0 12 3;
   text-color: @fg;
 }
@@ -55,7 +54,7 @@ mainbox {
 }
 
 prompt {
-  background-color: @blue;
+  background-color: @bg-alt;
   enabled: true;
   font: "FontAwesome 12";
   padding: 12 0 0 12;
