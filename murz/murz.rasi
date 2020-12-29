@@ -1,5 +1,4 @@
 configuration {
-  display-name: "::";
   drun-display-format: "{name}";
   font: "Iosevka Nerd Font Medium 12";
   modi: "drun,run,window";
