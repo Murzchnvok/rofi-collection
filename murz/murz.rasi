@@ -48,5 +48,6 @@ mainbox {
 window {
   border: 2;
   border-color: @fg-alt;
+  padding: 10;
   transparency: "real";
 }
