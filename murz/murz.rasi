@@ -1,0 +1,52 @@
+configuration {
+  display-name: "::";
+  drun-display-format: "{name}";
+  font: "Iosevka Nerd Font Medium 12";
+  modi: "drun,run,window";
+  fullscreen: false;
+  sidebar-mode: false;
+  //position: 0;
+  hide-scrollbar: true;
+  disable-history: false;
+}
+
+* {
+  bg: #18181B;
+  bg-alt: #20212C;
+  fg: #A0A0AB;
+  fg-alt: #5D5E72;
+
+  background-color: @bg;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+element, entry, prompt {
+  padding: 10;
+  text-color: @fg-alt;
+}
+
+element selected {
+  background-color: @bg-alt;
+  text-color: @fg;
+}
+
+inputbar {
+  children: [entry];
+}
+
+listview {
+  lines: 10;
+}
+
+mainbox {
+  children: [inputbar, listview];
+}
+
+window {
+  border: 2;
+  border-color: @fg-alt;
+  transparency: "real";
+}
