@@ -2,10 +2,10 @@ configuration {
   display-run: " ";
   display-drun: "  ";
   display-window: "  ";
-  drun-display-format: "{icon} {name}";
+  drun-display-format: "{name}";
   font: "JetBrainsMono Nerd Font Medium 10";
   modi: "window,run,drun";
-  show-icons: true;
+  // show-icons: true;
 }
 
 * {
