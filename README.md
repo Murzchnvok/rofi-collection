@@ -82,13 +82,21 @@ $HOME
 
 _Quality is more important then quantity!_
 
+## Murz (my own color scheme)
+
+![rofi](screenshots/murz/rofi.png)
+
 ## Dracula
+
+![rofi](screenshots/dracula/rofi.png)
+
+## Gruvbox
 
 ![rofi](screenshots/dracula/rofi.png)
 
 ## Material
 
-![rofi](screenshots/material/rofi.png)
+![rofi](screenshots/gruvbox/rofi.png)
 
 ## Minimal
 
