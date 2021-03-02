@@ -92,11 +92,11 @@ _Quality is more important then quantity!_
 
 ## Gruvbox
 
-![rofi](screenshots/dracula/rofi.png)
+![rofi](screenshots/gruvbox/rofi.png)
 
 ## Material
 
-![rofi](screenshots/gruvbox/rofi.png)
+![rofi](screenshots/material/rofi.png)
 
 ## Minimal
 
