@@ -26,12 +26,17 @@ configuration {
 
 element {
   padding: 12;
-  orientation: vertical;
   text-color: @bg-alt;
 }
 
 element selected {
   text-color: @fg;
+}
+
+element-text {
+  padding: 2;
+  background-color: inherit;
+  text-color: inherit;
 }
 
 entry {
