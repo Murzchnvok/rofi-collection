@@ -27,12 +27,16 @@ configuration {
 
 element {
   padding: 12;
-  orientation: vertical;
   text-color: @blue;
 }
 
 element selected {
   text-color: @purple;
+}
+
+element-text {
+  background-color: inherit;
+  text-color: inherit;
 }
 
 entry {

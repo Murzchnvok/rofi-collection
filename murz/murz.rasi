@@ -2,7 +2,7 @@ configuration {
   drun-display-format: "{name}";
   font: "Iosevka Nerd Font Medium 12";
   modi: "drun,run,window";
-  fullscreen: false;
+  //fullscreen: false; /* This gives a warning: `Option: fullscreen is not found.` */
   sidebar-mode: false;
   //position: 0;
   disable-history: false;
@@ -16,7 +16,7 @@ configuration {
 
   background-color: @bg;
   border: 0;
-  margin: 0;
+  margin: 2;
   padding: 0;
   spacing: 0;
 }
@@ -29,6 +29,11 @@ element, entry, prompt {
 element selected {
   background-color: @bg-alt;
   text-color: @fg;
+}
+
+element-text {
+  background-color: inherit;
+  text-color: inherit;
 }
 
 inputbar {
