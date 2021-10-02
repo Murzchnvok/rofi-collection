@@ -107,4 +107,4 @@ _Quality is more important then quantity!_
 ![rofi](screenshots/nord/rofi.png)
 
 ## OneDark
-![rofi](screenshots/onedark/onedark.jpg)
+![rofi](screenshots/onedark/rofi.jpg)
