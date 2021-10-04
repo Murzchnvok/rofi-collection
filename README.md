@@ -105,3 +105,6 @@ _Quality is more important then quantity!_
 ## Nord
 
 ![rofi](screenshots/nord/rofi.png)
+
+## OneDark
+![rofi](screenshots/onedark/rofi.jpg)
