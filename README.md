@@ -1,6 +1,6 @@
 # Rofi Collection
 
-My personal collection.
+Started as _My personal collection_, but now it's a community thing I guess, at least it's being updated by the Contributors and I really appreciate that.
 
 _If you find any error or you think I need to add something to this readme please send a message to me on [reddit](https://www.reddit.com/user/murzchnvok)_
 
@@ -107,4 +107,5 @@ _Quality is more important then quantity!_
 ![rofi](screenshots/nord/rofi.png)
 
 ## OneDark
+
 ![rofi](screenshots/onedark/rofi.jpg)
