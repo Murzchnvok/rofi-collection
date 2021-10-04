@@ -1,10 +1,17 @@
+/*
+ * ROFI color theme
+ *
+ * Based on Something Found in the Internet
+ *
+ * User: Contributors
+ * Copyright: *!
+ */
+
 configuration {
   drun-display-format: "{name}";
   font: "Iosevka Nerd Font Medium 12";
   modi: "drun,run,window";
-  //fullscreen: false; /* This gives a warning: `Option: fullscreen is not found.` */
   sidebar-mode: false;
-  //position: 0;
   disable-history: false;
 }
 

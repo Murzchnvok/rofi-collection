@@ -1,3 +1,12 @@
+/*
+ * ROFI color theme
+ *
+ * Based on Something Found in the Internet
+ *
+ * User: Contributors
+ * Copyright: *!
+ */
+
 configuration {
   display-run: " ";
   display-drun: "  ";
@@ -5,7 +14,6 @@ configuration {
   drun-display-format: "{name}";
   font: "JetBrainsMono Nerd Font Medium 10";
   modi: "window,run,drun";
-  // show-icons: true;
 }
 
 * {
