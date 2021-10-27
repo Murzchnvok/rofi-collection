@@ -50,6 +50,13 @@ $HOME
 -> git clone https://github.com/Murzchnvok/rofi-collection
 ```
 
+As suggested by Ryan S., you could also shallow close (not clone the entire repo history):
+
+```bash
+$HOME
+-> git clone https://github.com/Murzchnvok/rofi-collection --depth 1
+```
+
 If you're using sxhkd you need to add something like this to your sxhkdrc:
 
 ```bash
