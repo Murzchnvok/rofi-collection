@@ -87,7 +87,7 @@ $HOME
 - [Wallpaper Collection](https://drive.google.com/drive/folders/1o1qjRgkJtnF_8uGB1z6MRsQUjWinHUsw?usp=sharing)
 - [Official rofi-themes repo](https://github.com/davatorium/rofi-themes)
 
-_Quality is more important then quantity!_
+_Quality is more important than quantity!_
 
 ## Murz (my own color scheme)
 
