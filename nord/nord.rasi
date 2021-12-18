@@ -8,86 +8,80 @@
  */
 
 configuration {
-  display-run: " ";
-  display-drun: "  ";
-  display-window: "  ";
-  drun-display-format: "{icon} {name}";
   font: "JetBrainsMono Nerd Font Medium 10";
-  modi: "window,run,drun";
-  show-icons: true;
+
+  drun {
+    display-name: "";
+  }
+
+  run {
+    display-name: "";
+  }
+
+  window {
+    display-name: "";
+  }
+
+  timeout {
+    delay: 10;
+    action: "kb-cancel";
+  }
 }
 
 * {
-  polar-1: #2E3440;
-  polar-2: #3B4252;
-  polar-3: #434C5E;
-  polar-4: #4C566A;
-
-  snow-1: #D8DEE9;
-  snow-2: #E5E9F0;
-  snow-3: #ECEFF4;
-
-  frost-1: #8FBCBB;
-  frost-2: #88C0D0;
-  frost-3: #81A1C1;
-  frost-4: #5E81AC;
-
-  aurora-1: #BF616A;
-  aurora-2: #D08770;
-  aurora-3: #EBCB8B;
-  aurora-4: #A3BE8C;
-  aurora-5: #B48EAD;
-
-  background-color: @polar-1;
-  
   border: 0;
   margin: 0;
   padding: 0;
   spacing: 0;
+
+  bg: #2E3440;
+  bg-alt: #3B4252;
+  fg: #81A1C1;
+  fg-alt: #EBCB8B;
+
+  background-color: @bg;
+  text-color: @fg;
 }
 
-element {
-  padding: 12;
-  text-color: @frost-3;
-}
-
-element selected {
-  text-color: @aurora-3;
-}
-
-element-text {
-  padding: 2;
-  background-color: inherit;
-  text-color: inherit;
-}
-
-entry {
-  background-color: @polar-2;
-  padding: 12 0 12 3;
-  text-color: @frost-1;
-}
-
-inputbar {
-  children: [prompt, entry];
-}
-
-listview {
-  columns: 1;
-  lines: 8;
+window {
+  transparency: "real";
 }
 
 mainbox {
   children: [inputbar, listview];
 }
 
-prompt {
-  background-color: @polar-2;
-  enabled: true;
-  font: "FontAwesome 12";
-  padding: 12 0 0 12;
-  text-color: @frost-1;
+inputbar {
+  background-color: @bg-alt;
+  children: [prompt, entry];
 }
 
-window {
-  transparency: "real";
+entry {
+  background-color: inherit;
+  padding: 12px 3px;
+}
+
+prompt {
+  background-color: inherit;
+  padding: 12px;
+}
+
+listview {
+  lines: 8;
+}
+
+element {
+  children: [element-icon, element-text];
+}
+
+element-icon {
+  padding: 10px 10px;
+}
+
+element-text {
+  padding: 10px 0;
+}
+
+element-text selected {
+  text-color: @fg-alt;
 }

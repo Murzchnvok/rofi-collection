@@ -8,32 +8,88 @@
  */
 
 configuration {
-	modi: "window,run,ssh,drun";
-	font: "Jetbrains Mono 13";
-	icon-theme: "Papirus";
-	show-icons: true;
+  font: "Iosevka Nerd Font Medium 12";
+
+  drun {
+    display-name: "";
+  }
+
+  run {
+    display-name: "";
+  }
+
+  window {
+    display-name: "";
+  }
+
+  timeout {
+    delay: 10;
+    action: "kb-cancel";
+  }
 }
 
 * {
-	background-color: #282c34;
-	text-color: #abb2bf;
-	border: 0.5% 0.25% 0.5% 0.25%;
-	border-color: #282c34;
-	location: center;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+
+  bg: #282C34;
+	fg: #ABB2BF;
+	blue: #61AFEF;
+	blue-alt: #61AFEF15;
+	red: #E06C75;
+  red-alt: #E06C7515;
+
+  background-color: @bg;
+  text-color: @fg;
 }
 
-prompt {
-	enabled: true;
-	padding: 0% 0.5% 0% 0%;
-	font: "Jetbrains Mono";
-	text-color: #abb2bf;
-	background-color: #282c34;
+window {
+  border: 2px;
+  border-color: @blue-alt;
+  border-radius: 6px;
+  padding: 6px;
+  transparency: "real";
 }
 
-element-icon {
-	size: 25px;
+mainbox {
+  children: [inputbar, listview];
+}
+
+inputbar {
+  border: 0 0 0 2px;
+  border-color: @blue;
+  border-radius: 6px;
+  children: [entry];
+  margin: 0 0 6px 0;
+}
+
+entry {
+  background-color: @blue-alt;
+  padding: 10px;
+  text-color: @blue;
+}
+
+listview {
+  lines: 10;
+}
+
+element {
+  border: 0 0 0 2px;
+  children: [element-text];
 }
 
 element selected {
-	text-color: #98c379;
+  border-color: @red;
+  border-radius: 6px;
+}
+
+element-text {
+  padding: 10px;
+}
+
+element-text selected {
+  background-color: @red-alt;
+  text-color: @red;
 }

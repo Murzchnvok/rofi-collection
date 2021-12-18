@@ -34,7 +34,7 @@ configuration {
 window {
   border: 2px;
   border-color: @fg-alt;
-  padding: 10;
+  padding: 6px;
   transparency: "real";
 }
 
@@ -47,7 +47,7 @@ inputbar {
 }
 
 entry {
-  padding: 10;
+  padding: 10px;
 }
 
 listview {
@@ -58,8 +58,7 @@ listview {
 scrollbar {
   background-color: @bg-alt;
   handle-color: @fg;
-  padding: 3;
-  margin: 0 0 0 10;
+  margin: 0 0 0 6px;
 }
 
 element {
@@ -67,7 +66,7 @@ element {
 }
 
 element-text {
-  padding: 10;
+  padding: 10px;
 }
 
 element-text selected {

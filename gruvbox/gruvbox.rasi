@@ -58,12 +58,12 @@ inputbar {
 
 entry {
   background-color: inherit;
-  padding: 12 3;
+  padding: 12px 3px;
 }
 
 prompt {
   background-color: inherit;
-  padding: 12 16 12 12;
+  padding: 12px 16px 12px 12px;
 }
 
 listview {
@@ -75,7 +75,7 @@ element {
 }
 
 element-text {
-  padding: 10;
+  padding: 10px;
 }
 
 element-text selected {

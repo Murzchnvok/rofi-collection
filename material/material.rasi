@@ -58,12 +58,12 @@ inputbar {
 
 entry {
   background-color: inherit;
-  padding: 12 3;
+  padding: 12px 3px;
 }
 
 prompt {
   background-color: inherit;
-  padding: 12;
+  padding: 12px;
 }
 
 listview {
@@ -75,11 +75,11 @@ element {
 }
 
 element-icon {
-  padding: 10 10;
+  padding: 10px 10px;
 }
 
 element-text {
-  padding: 10 0;
+  padding: 10px 0;
   text-color: @fg-alt;
 }
 
