@@ -8,68 +8,74 @@
  */
 
 configuration {
-  display-run: ":: ";
-  display-drun: ":: ";
-  display-window: ":: ";
-  drun-display-format: "{name}";
   font: "Iosevka Nerd Font Medium 12";
-  modi: "window,run,drun";
-  show-icons: false;
+
+  drun {
+    display-name: "[^.^]";
+  }
+
+  run {
+    display-name: "[°.°]";
+  }
+
+  window {
+    display-name: "[*.*]";
+  }
+
+  timeout {
+    delay: 10;
+    action: "kb-cancel";
+  }
 }
 
 * {
-  bg: #151515;
-  bg-alt: #414141;
-
-  fg: #ffffff;
-  fg-alt: #f5f5f5;
-
-  background-color: @bg;
-  
   border: 0;
   margin: 0;
   padding: 0;
   spacing: 0;
-}
 
-element {
-  padding: 12;
-  text-color: @bg-alt;
-}
+  bg: #151515;
+  bg-alt: #232323;
+  fg: #FFFFFF;
+  fg-alt: #424242;
 
-element selected {
+  background-color: @bg;
   text-color: @fg;
 }
 
-element-text {
-  padding: 2;
-  background-color: inherit;
-  text-color: inherit;
-}
-
-entry {
-  padding: 12 0 12 3;
-  text-color: @fg;
-}
-
-inputbar {
-  children: [prompt, entry];
-}
-
-listview {
-  columns: 1;
-  lines: 8;
+window {
+  transparency: "real";
 }
 
 mainbox {
   children: [inputbar, listview];
 }
 
-prompt {
-  padding: 12 0 0 12;
-  text-color: @fg;
+inputbar {
+  children: [prompt, entry];
 }
 
-window {
-  transparency: "real";
+entry {
+  padding: 12 0;
+}
+
+prompt {
+  padding: 12;
+}
+
+listview {
+  lines: 8;
+}
+
+element {
+  children: [element-text];
+}
+
+element-text {
+  padding: 12;
+  text-color: @fg-alt;
+}
+
+element-text selected {
+  text-color: @fg;
 }

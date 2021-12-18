@@ -8,52 +8,63 @@
  */
 
 configuration {
-  drun-display-format: "{name}";
   font: "Iosevka Nerd Font Medium 12";
-  modi: "drun,run,window";
-  sidebar-mode: false;
-  disable-history: false;
+
+  // drun {
+  //   display-name: "";
+  // }
+
+  // run {
+  //   display-name: "";
+  // }
+
+  // window {
+  //   display-name: "";
+  // }
+
+  timeout {
+    delay: 10;
+    action: "kb-cancel";
+  }
 }
 
 * {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+
   bg: #18181B;
   bg-alt: #20212C;
   fg: #A0A0AB;
   fg-alt: #5D5E72;
 
   background-color: @bg;
-  border: 0;
-  margin: 2;
-  padding: 0;
-  spacing: 0;
-}
-
-element, entry, prompt {
-  padding: 10;
   text-color: @fg-alt;
 }
 
-element selected {
-  background-color: @bg-alt;
-  text-color: @fg;
+window {
+  border: 2px;
+  border-color: @fg-alt;
+  padding: 10;
+  transparency: "real";
 }
 
-element-text {
-  background-color: inherit;
-  text-color: inherit;
+mainbox {
+  children: [inputbar, listview];
 }
 
 inputbar {
   children: [entry];
 }
 
+entry {
+  padding: 10;
+}
+
 listview {
   lines: 10;
   scrollbar: true;
-}
-
-mainbox {
-  children: [inputbar, listview];
 }
 
 scrollbar {
@@ -63,9 +74,15 @@ scrollbar {
   margin: 0 0 0 10;
 }
 
-window {
-  border: 2;
-  border-color: @fg-alt;
+element {
+  children: [element-text];
+}
+
+element-text {
   padding: 10;
-  transparency: "real";
+}
+
+element-text selected {
+  background-color: @bg-alt;
+  text-color: @fg;
 }

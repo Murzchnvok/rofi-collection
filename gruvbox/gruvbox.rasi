@@ -8,72 +8,76 @@
  */
 
 configuration {
-  display-run: " ";
-  display-drun: "  ";
-  display-window: "  ";
-  drun-display-format: "{name}";
   font: "JetBrainsMono Nerd Font Medium 10";
-  modi: "window,run,drun";
+
+  drun {
+    display-name: "";
+  }
+
+  run {
+    display-name: "";
+  }
+
+  window {
+    display-name: "";
+  }
+
+  timeout {
+    delay: 10;
+    action: "kb-cancel";
+  }
 }
 
 * {
-  bg: #282828;
-  bg-alt: #3c3836;
-
-  fg: #fbf1c7;
-
-  blue: #83a598;
-
-  background-color: @bg;
-  
   border: 0;
   margin: 0;
   padding: 0;
   spacing: 0;
-}
 
-element {
-  padding: 12;
+  bg: #282828;
+  bg-alt: #3c3836;
+  fg: #fbf1c7;
+  blue: #83a598;
+
+  background-color: @bg;
   text-color: @fg;
 }
 
-element selected {
-  text-color: @blue;
-}
-
-element-text {
-  padding: 2;
-  background-color: inherit;
-  text-color: inherit;
-}
-
-entry {
-  background-color: @bg-alt;
-  padding: 12 0 12 3;
-  text-color: @fg;
-}
-
-inputbar {
-  children: [prompt, entry];
-}
-
-listview {
-  columns: 1;
-  lines: 8;
+window {
+  transparency: "real";
 }
 
 mainbox {
   children: [inputbar, listview];
 }
 
-prompt {
+inputbar {
   background-color: @bg-alt;
-  enabled: true;
-  font: "FontAwesome 12";
-  padding: 12 0 0 12;
-  text-color: @fg;
+  children: [prompt, entry];
 }
 
-window {
-  transparency: "real";
+entry {
+  background-color: inherit;
+  padding: 12 3;
+}
+
+prompt {
+  background-color: inherit;
+  padding: 12 16 12 12;
+}
+
+listview {
+  lines: 8;
+}
+
+element {
+  children: [element-text];
+}
+
+element-text {
+  padding: 10;
+}
+
+element-text selected {
+  text-color: @blue;
 }
