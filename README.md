@@ -1,6 +1,6 @@
 # Rofi Collection
 
-Started as __my personal collection__, but now it's a community thing I guess, at least it's being updated by the Contributors and I really appreciate that.
+Started as **my personal collection**, but now it's a community thing I guess, at least it's being updated by the Contributors and I really appreciate that.
 
 ## Getting Started
 
@@ -33,7 +33,7 @@ Also you need to download and install these fonts from [nerd fonts](https://www.
 - JetBrainsMono
 - Iosevka
 
-To install these fonts, copy/move to the folder __~/.fonts__ and run in the terminal:
+To install these fonts, copy/move to the folder **~/.fonts** and run in the terminal:
 
 ```bash
 $HOME
@@ -63,7 +63,7 @@ super + shift + {i,o,p}
     rofi -show {run,drun,window} -theme $HOME/rofi-collection/nord/nord.rasi
 ```
 
-or copy/move the rasi config file to __~/.local/share/rofi/themes/__ and run rofi theme selector:
+or copy/move the rasi config file to **~/.local/share/rofi/themes/** and run rofi theme selector:
 
 ```bash
 $HOME/rofi-collection
@@ -114,4 +114,4 @@ _Quality is more important than quantity!_
 
 ## OneDark
 
-![rofi](screenshots/onedark/rofi.jpg)
+![rofi](screenshots/onedark/rofi.png)
