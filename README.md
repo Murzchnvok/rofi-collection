@@ -1,8 +1,6 @@
 # Rofi Collection
 
-Started as _My personal collection_, but now it's a community thing I guess, at least it's being updated by the Contributors and I really appreciate that.
-
-_If you find any error or you think I need to add something to this readme please send a message to me on [reddit](https://www.reddit.com/user/murzchnvok)_
+Started as __my personal collection__, but now it's a community thing I guess, at least it's being updated by the Contributors and I really appreciate that.
 
 ## Getting Started
 
@@ -26,15 +24,16 @@ $HOME
 
 If you're having trouble:
 
-[rofi repo](https://github.com/davatorium/rofi).
+[Rofi Official Repo](https://github.com/davatorium/rofi).
 
 [Papirus Icon repo](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme#installation)
 
-Also you need to download and install this font from [nerd fonts](https://www.nerdfonts.com/font-downloads):
+Also you need to download and install these fonts from [nerd fonts](https://www.nerdfonts.com/font-downloads):
 
 - JetBrainsMono
+- Iosevka
 
-To install this font, copy/move to the folder _~/.fonts_ and run in the terminal:
+To install these fonts, copy/move to the folder __~/.fonts__ and run in the terminal:
 
 ```bash
 $HOME
@@ -64,7 +63,7 @@ super + shift + {i,o,p}
     rofi -show {run,drun,window} -theme $HOME/rofi-collection/nord/nord.rasi
 ```
 
-or copy/move the rasi config file to _~/.local/share/rofi/themes/_ and run rofi theme selector:
+or copy/move the rasi config file to __~/.local/share/rofi/themes/__ and run rofi theme selector:
 
 ```bash
 $HOME/rofi-collection
