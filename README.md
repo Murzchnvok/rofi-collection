@@ -30,8 +30,8 @@ If you're having trouble:
 
 Also you need to download and install these fonts from [nerd fonts](https://www.nerdfonts.com/font-downloads):
 
-- JetBrainsMono
-- Iosevka
+- [JetBrainsMono](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/JetBrainsMono.zip)
+- [Iosevka](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Inconsolata.zip)
 
 To install these fonts, copy/move to the folder **~/.fonts** and run in the terminal:
 
