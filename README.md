@@ -27,6 +27,7 @@ super + shift + {i,o,p}
     rofi -show {run,drun,window} -theme $HOME/rofi-collection/theme.rasi
 ```
 > `super + shift + {i,o,p}` is just an example, use whatever you want.
+
 > Also the _path_ `$HOME/rofi-collection/theme.rasi` is where you cloned the repo.
 
 ### Customization
@@ -34,7 +35,7 @@ super + shift + {i,o,p}
 #### Change font
 > By default is using **JetBrainsmono** font from [nerd fonts](https://www.nerdfonts.com/font-downloads).
 
-Open `config/font.rasi`, and change what's inside "":
+Open `config/font.rasi`, and change what's inside `""`:
 
 ```bash
 configuration {
@@ -50,10 +51,12 @@ ROFI_FONT="JetBrainsMono Nerd Font Medium 12"
 ```
 
 ### You might be interested
+> Other repos related to rofi themes.
 
 - [rofi-themes-collection](https://github.com/newmanls/rofi-themes-collection) by newmanls
 
 ### Examples
+> Change goes in `theme.rasi`.
 
 ![example of hidrot theme](screenshots/hidrot.png)
 
