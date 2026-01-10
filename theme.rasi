@@ -1,0 +1,4 @@
+@import "config/general"
+@import "colorscheme/gruvbox"
+
+@import "themes/hidrot"

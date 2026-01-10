@@ -1,0 +1,56 @@
+* {
+  background-color: @bg0;
+  text-color: @fg1;
+}
+
+window {
+  border: 2px;
+  border-color: @bg1;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+mainbox {
+  children: [inputbar, listview];
+}
+
+inputbar {
+  children: [entry];
+}
+
+entry {
+  padding: 10px;
+  text-color: @fg0;
+}
+
+listview {
+  lines: 10;
+  scrollbar: true;
+}
+
+scrollbar {
+  background-color: @bg1;
+  border-radius: 6px;
+  handle-color: @fg0;
+  handle-width: 6px;
+  margin: 0 0 0 6px;
+}
+
+element {
+  border: 2px;
+  children: [element-text];
+}
+
+element selected {
+  border-color: @fg1;
+  border-radius: 6px;
+}
+
+element-text {
+  padding: 10px;
+}
+
+element-text selected {
+  background-color: @bg1;
+  text-color: @fg0;
+}

@@ -1,0 +1,52 @@
+* {
+  background-color: @bg0;
+  text-color: @fg0;
+}
+
+window {
+  border: 2px;
+  border-color: @blue-trans;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+mainbox {
+  children: [inputbar, listview];
+}
+
+inputbar {
+  border: 0 0 0 2px;
+  border-color: @blue;
+  border-radius: 6px;
+  margin: 0 0 6px 0;
+  children: [entry];
+}
+
+entry {
+  background-color: @blue-trans;
+  padding: 10px;
+  text-color: @blue;
+}
+
+listview {
+  lines: 10;
+}
+
+element {
+  border: 0 0 0 2px;
+  children: [element-text];
+}
+
+element selected {
+  border-color: @red;
+  border-radius: 6px;
+}
+
+element-text {
+  padding: 10px;
+}
+
+element-text selected {
+  background-color: @red-trans;
+  text-color: @red;
+}

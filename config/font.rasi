@@ -1,0 +1,3 @@
+configuration {
+  font: env(ROFI_FONT, "JetBrainsMono Nerd Font Medium 12");
+}

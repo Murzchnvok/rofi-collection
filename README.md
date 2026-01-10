@@ -1,121 +1,74 @@
-# Rofi Collection
-
-Started as **my personal collection**, but now it's a community thing I guess, at least it's being updated by the Contributors and I really appreciate that.
+<h2 align="center">Rofi Collection</h2>
 
 ## Getting Started
+> add more themes soon
 
 ### Prerequisites
+> You need [rofi](https://github.com/davatorium/rofi) installed.
 
-You need to install Rofi and an icon pack, the one I'm using is [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme):
+### Install
+> There's different ways on how you can set this up, this is how I do it.
 
-Debian/Ubuntu
-
-```bash
-$HOME
--> sudo apt install rofi papirus-icon-theme
-```
-
-Fedora
+#### Clone repo
+> **--depth=1** shallow clone (basically smaller repo size).
 
 ```bash
-$HOME
--> sudo dnf install rofi papirus-icon-theme
+git clone --depth=1 https://github.com/Murzchnvok/rofi-collection
 ```
 
-If you're having trouble:
+#### Use
+> Before you could create a symlink or copy/move to **~/.local/share/rofi/theme** and run rofi-the-selector to set a theme.
+> Now I'm trying something different, kinda easier to change things, but maybe a bit harder to run since you have to set a bind to manually run this theme.
 
-[Rofi Official Repo](https://github.com/davatorium/rofi).
-
-[Papirus Icon repo](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme#installation)
-
-Also you need to download and install these fonts from [nerd fonts](https://www.nerdfonts.com/font-downloads):
-
-- JetBrainsMono
-- Iosevka
-
-To install these fonts, copy/move to the folder **~/.fonts** and run in the terminal:
-
-```bash
-$HOME
--> fc-cache -fv
-```
-
-### Installing
-
-First you need to clone the repo (recommend in \$HOME, or Projects directory):
-
-```bash
-$HOME
--> git clone https://github.com/Murzchnvok/rofi-collection
-```
-
-As suggested by Ryan S., you could also shallow clone (not clone the entire repo history):
-
-```bash
-$HOME
--> git clone https://github.com/Murzchnvok/rofi-collection --depth 1
-```
-
-If you're using sxhkd you need to add something like this to your sxhkdrc:
+If you're using **sxhkd** add to your sxhkdrc:
 
 ```bash
 super + shift + {i,o,p}
-    rofi -show {run,drun,window} -theme $HOME/rofi-collection/nord/nord.rasi
+    rofi -show {run,drun,window} -theme $HOME/rofi-collection/theme.rasi
 ```
+> `super + shift + {i,o,p}` is just an example, use whatever you want.
+> Also the _path_ `$HOME/rofi-collection/theme.rasi` is where you cloned the repo.
 
-or copy/move the rasi config file to **~/.local/share/rofi/themes/** and run rofi theme selector:
+### Customization
+
+#### Change font
+> By default is using **JetBrainsmono** font from [nerd fonts](https://www.nerdfonts.com/font-downloads).
+
+Open `config/font.rasi`, and change what's inside "":
 
 ```bash
-$HOME/rofi-collection
--> cp -r nord $HOME/.local/share/rofi/themes/
-
-$HOME
--> rofi-theme-selector
+configuration {
+  font: env(ROFI_FONT, "Font You Want to Use SIZE");
+}
 ```
 
-Remember to keep updated:
+Second option, set an environment variable to `ROFI_FONT`:
+> If you don't know how to set the variable google it.
 
 ```bash
-$HOME
--> cd $HOME/rofi-collection && git pull
+ROFI_FONT="JetBrainsMono Nerd Font Medium 12"
 ```
 
-## You might be interested
+### You might be interested
 
-- [Polybar Collection](https://github.com/Murzchnvok/polybar-collection)
-- [Wallpaper Collection](https://drive.google.com/drive/folders/1o1qjRgkJtnF_8uGB1z6MRsQUjWinHUsw?usp=sharing)
-- [Official rofi-themes repo](https://github.com/davatorium/rofi-themes)
+- [rofi-themes-collection](https://github.com/newmanls/rofi-themes-collection) by newmanls
 
-_Quality is more important than quantity!_
+### Examples
 
-## Murz (my own color scheme)
+![example of hidrot theme](screenshots/hidrot.png)
 
-![rofi](screenshots/murz/rofi.png)
+```bash
+@import "config/general"
+@import "colorscheme/gruvbox"
 
-## Dracula
+@import "themes/hidrot"
+```
 
-![rofi](screenshots/dracula/rofi.png)
+![example of murz theme](screenshots/murz.png)
 
-## Gruvbox
+```bash
+@import "config/general"
+@import "colorscheme/dracula"
 
-![rofi](screenshots/gruvbox/rofi.png)
-
-## Material
-
-![rofi](screenshots/material/rofi.png)
-
-## Minimal
-
-![rofi](screenshots/minimal/rofi.png)
-
-## Nord
-
-![rofi](screenshots/nord/rofi.png)
-
-## OneDark
-
-![rofi](screenshots/onedark/rofi.png)
-
-## Tokyonight
-
-![rofi](screenshots/tokyonight/rofi.png)
+@import "themes/murz"
+```
