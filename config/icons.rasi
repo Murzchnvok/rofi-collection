@@ -1,13 +1,12 @@
 configuration {
-  drun {
-    display-name: "";
-  }
+  show-icons: true;
+}
 
-  run {
-    display-name: "";
-  }
+element {
+  children: [element-icon, element-text];
+}
 
-  window {
-    display-name: "";
-  }
+element-icon {
+  padding: 0 10px 0 0;
+  size: 18px;
 }
