@@ -1,7 +1,10 @@
 <h2 align="center">Rofi Collection</h2>
+<div align="center">
+    <img src="https://github.com/Murzchnvok/rofi-collection/blob/master/screenshots/hidrot.png?raw=true" />
+</div>
 
 ## Getting Started
-> add more themes soon
+> I'll add a new theme when I make something nice.
 
 ### Prerequisites
 > You need [rofi](https://github.com/davatorium/rofi) installed.
@@ -58,10 +61,25 @@ ROFI_FONT="JetBrainsMono Nerd Font Medium 12"
 ### Examples
 > Change goes in `theme.rasi`.
 
+#### Gnomio
+
+![example of gnomio theme](screenshots/gnomio.png)
+
+```bash
+@import "config/general"
+@import "config/icons"
+@import "colorscheme/onedark"
+
+@import "themes/gnomio"
+```
+
+#### Hidrot
+
 ![example of hidrot theme](screenshots/hidrot.png)
 
 ```bash
 @import "config/general"
+@import "config/disable-prompt"
 @import "colorscheme/gruvbox"
 
 @import "themes/hidrot"
@@ -71,6 +89,7 @@ ROFI_FONT="JetBrainsMono Nerd Font Medium 12"
 
 ```bash
 @import "config/general"
+@import "config/disable-prompt"
 @import "colorscheme/dracula"
 
 @import "themes/murz"
