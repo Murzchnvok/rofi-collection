@@ -1,4 +1,5 @@
 @import "config/general"
+@import "config/disable-prompt"
 @import "colorscheme/gruvbox"
 
 @import "themes/hidrot"
