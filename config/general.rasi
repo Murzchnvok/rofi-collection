@@ -1,5 +1,4 @@
 @import "font"
-@import "icons"
 
 * {
   background-color: transparent;
@@ -8,4 +7,27 @@
   margin: 0;
   padding: 0;
   spacing: 0;
+}
+
+configuration {
+  drun {
+    display-name: "";
+  }
+
+  run {
+    display-name: "";
+  }
+
+  window {
+    display-name: "";
+  }
+}
+
+inputbar {
+  children: [prompt, entry];
+}
+
+prompt {
+  padding: 10px;
+  text-color: @fg0;
 }
