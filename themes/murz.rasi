@@ -1,9 +1,5 @@
-* {
-  background-color: @bg0;
-  text-color: @fg1;
-}
-
 window {
+  background-color: @bg0;
   border: 2px;
   border-color: @bg1;
   border-radius: 6px;
@@ -15,7 +11,7 @@ mainbox {
 }
 
 inputbar {
-  children: [entry];
+  margin: 0 0 6px 0;
 }
 
 entry {
@@ -38,19 +34,19 @@ scrollbar {
 
 element {
   border: 2px;
-  children: [element-text];
-}
-
-element selected {
-  border-color: @fg1;
   border-radius: 6px;
-}
-
-element-text {
   padding: 10px;
 }
 
-element-text selected {
+element selected {
   background-color: @bg1;
+  border-color: @fg1;
+}
+
+element-text {
+  text-color: @fg1;
+}
+
+element-text selected {
   text-color: @fg0;
 }

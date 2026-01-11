@@ -1,9 +1,5 @@
-* {
-  background-color: @bg0;
-  text-color: @fg0;
-}
-
 window {
+  background-color: @bg0;
   border: 2px;
   border-color: @blue-trans;
   border-radius: 6px;
@@ -15,15 +11,14 @@ mainbox {
 }
 
 inputbar {
+  background-color: @blue-trans;
   border: 0 0 0 2px;
   border-color: @blue;
   border-radius: 6px;
   margin: 0 0 6px 0;
-  children: [entry];
 }
 
 entry {
-  background-color: @blue-trans;
   padding: 10px;
   text-color: @blue;
 }
@@ -34,19 +29,19 @@ listview {
 
 element {
   border: 0 0 0 2px;
-  children: [element-text];
-}
-
-element selected {
-  border-color: @red;
   border-radius: 6px;
-}
-
-element-text {
   padding: 10px;
 }
 
-element-text selected {
+element selected {
   background-color: @red-trans;
+  border-color: @red;
+}
+
+element-text {
+  text-color: @fg0;
+}
+
+element-text selected {
   text-color: @red;
 }
