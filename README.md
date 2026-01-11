@@ -85,6 +85,8 @@ ROFI_FONT="JetBrainsMono Nerd Font Medium 12"
 @import "themes/hidrot"
 ```
 
+#### Murz
+
 ![example of murz theme](screenshots/murz.png)
 
 ```bash
