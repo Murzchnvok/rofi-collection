@@ -1,0 +1,52 @@
+window {
+  background-color: @bg0;
+  location: north;
+  width: 35em;
+  border: 0 2px 2px 2px;
+  border-color: @purple;
+  border-radius: 0 0 10px 10px;
+}
+
+mainbox {
+  padding: 10px;
+  children: [inputbar, listview];
+}
+
+inputbar {
+  background-color: @purple-trans;
+  border: 2px;
+  border-color: @purple;
+  border-radius: 10px;
+  margin: 0 0 10px 0;
+}
+
+entry {
+  padding: 10px;
+  text-color: @fg0;
+}
+
+listview {
+  lines: 10;
+}
+
+element {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+element selected {
+  background-color: @purple-trans;
+}
+
+element-icon {
+  size: 18px;
+}
+
+element-text {
+  // padding: 0 0 0 10px;
+  text-color: @fg1;
+}
+
+element-text selected {
+  text-color: @fg0;
+}
